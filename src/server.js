@@ -2,11 +2,14 @@
 import express from 'express'
 const db = require('~/config/mongodb.js')
 const { env } = require('~/config/environment.js')
+const { V1Routes } = require('~/routes/v1/index.js')
 
 const startServer = () => {
 
   const app = express()
 
+  app.use(express.json())
+  app.use('/v1', V1Routes)
 
   app.get('/', async (req, res) => {
     res.end('<h1>Hello World!</h1><hr>')
