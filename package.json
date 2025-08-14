@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "author": "TrungQuanDev - Một Lập Trình Viên",
-  "description": "https://youtube.com/@trungquandev",
+  "description": "",
   "engines": {
     "node": ">=18.x"
   },
